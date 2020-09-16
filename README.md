@@ -18,8 +18,10 @@ This project uses the following libraries which are installed locally during the
 2. gf2x https://gitlab.inria.fr/gf2x/gf2x#the-gf2x-software-library
 
 # Build
-You will need to provide paths to OpenSSL _root_ directory.
+You will need to provide paths to OpenSSL _root_ directory. Also ensure that you build libgf2x and libntl 
+(in this order) before anything else as these two libraries are used everywhere throughout the code.
 
+From the terminal:
 ````
 $ mkdir build
 $ cd build
@@ -28,6 +30,12 @@ $ make libgf2x
 $ make libntl
 $ make
 ````
+
+From CLion:
+1. Build target **libgf2x**
+2. Build target **libntl**
+3. Build target **test_rankcommitment** or any other.
+
 # Run Tests
 To run the tests, build the library and run:
 
