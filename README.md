@@ -11,17 +11,26 @@ CANS 2020. The objective of this work is to implement and compare:
 1. OpenSSL
 2. CMake > 3.14
 
+# Dependencies
+This project uses the following libraries which are installed locally during the execution of cmake:
+
+1. NTL https://www.shoup.net/ntl/
+2. gf2x https://gitlab.inria.fr/gf2x/gf2x#the-gf2x-software-library
+
 # Build
-You will need to provide paths to OpenSSL _include_ and _lib_ directories
+You will need to provide paths to OpenSSL _root_ directory.
 
 ````
 $ mkdir build
 $ cd build
 $ cmake -DOPENSSL_ROOT_DIR=<path_to_openssl_root_dir> ..
+$ make libgf2x
+$ make libntl
+$ make
 ````
 # Run Tests
 To run the tests, build the library and run:
 
 ````
-$ build/tests/test_rankcommitment
+$ build/src/tests/test_rankcommitment
 ````
