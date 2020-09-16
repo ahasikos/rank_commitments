@@ -1,0 +1,7 @@
+#ifndef TEST_PARAMS_H_
+#define TEST_PARAMS_H_
+
+#endif //TEST_PARAMS_H_
+
+#define NUMBER_OF_ITERATIONS 20
+#define TESTRUN_LEN 2
