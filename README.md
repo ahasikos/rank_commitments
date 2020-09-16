@@ -32,5 +32,5 @@ $ make
 To run the tests, build the library and run:
 
 ````
-$ build/src/tests/test_rankcommitment
+$ build/src/test/test_rankcommitment
 ````
